@@ -5,7 +5,9 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  nav_msgs
   geometry_msgs
+
 )
 
 include_directories(
@@ -16,5 +18,5 @@ include_directories(
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
-add_executable(transform src/transform.cpp)
-target_link_libraries(transform ${catkin_LIBRARIES})
+add_executable(transform_boat src/transform_boat.cpp)
+target_link_libraries(transform_boat ${catkin_LIBRARIES})
